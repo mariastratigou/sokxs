@@ -1,3 +1,16 @@
 #header {
   color: #ff0000;
+  font-size: 35px;
+}
+body {
+  background-color: #fed0d0;
+  padding: 30px;
+}
+.box {
+  background-color: #c89393;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  font-size: 20px;
 }
