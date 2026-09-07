@@ -48,6 +48,15 @@ img {
   width: 450px;
   max-width: 50%;
 }
+.img-2 {
+  position: absolute;
+  right: 150px;
+  top: 800px;
+  border-radius: 15px;
+  margin: 80px auto;
+  width: 550px;
+  max-width: 50%;
+}
 /* CSS για την εμφάνιση του κουίζ */
 .quiz-container {
   max-width: 600px;
