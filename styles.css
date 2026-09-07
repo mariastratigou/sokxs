@@ -1,16 +1,36 @@
-#header {
-  color: #ff0000;
-  font-size: 35px;
+h1 {
+  color: #f04b05;
+  font-size: 56px;
+  margin: 20px;
+  margin-top: 30px;
+  font-weight: 800;
+  font-family:
+    Doppio One,
+    sans-serif;
+}
+
+#digital-wellbeing {
+  margin-top: 100px;
+  margin: 20px;
 }
 body {
-  background-color: #fed0d0;
+  background-color: #c7fdc9;
   padding: 30px;
 }
 .box {
-  background-color: #c89393;
+  background-color: #47906dbd;
   padding: 30px;
+  margin: 50px;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 50%;
+  width: 40%;
   font-size: 20px;
+}
+img {
+  position: absolute;
+  right: 100px;
+  top: 100px;
+  border-radius: 15px;
+  margin: 50px auto;
+  width: 450px;
 }
