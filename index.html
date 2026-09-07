@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -79,11 +77,7 @@
       <h1>The Offline Vibe</h1>
     </div>
 
-    <div >
-
-
     <div class="home-box">
-
       <h2 id="digital-wellbeing">
         Digital Wellbeing: Finding Balance in a Connected World
       </h2>
@@ -97,8 +91,8 @@
 
     <img src="εικονα.png" alt="Η εικόνα δεν βρέθηκε" />
     <div class="box2">
-      Resson that matters: lowers stress being permanently online and receiving
-      a barrage of notifications triggers the realeace of stress hormones.
+      Reason that matters: lowers stress being permanently online and receiving
+      a barrage of notifications triggers the release of stress hormones.
       <br />
       Enhances sleep: The blue light from smartphones disrupting your sleep
       quality one solution is taking breaks from digital devices, especially
@@ -107,122 +101,152 @@
   </body>
 </html>
 
-
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="el">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Το Πρώτο Μου HTML Κουίζ</title>
     <style>
-        /* CSS για την εμφάνιση του κουίζ */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            margin: 40px;
-        }
-        .quiz-container {
-            max-width: 600px;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .question {
-            font-weight: bold;
-            margin-top: 15px;
-            margin-bottom: 5px;
-        }
-        .options label {
-            display: block;
-            margin: 5px 0;
-            cursor: pointer;
-        }
-        button {
-            margin-top: 20px;
-            padding: 10px 15px;
-            background-color: #28a745;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        button:hover {
-            background-color: #218838;
-        }
-        #result {
-            margin-top: 20px;
-            font-size: 18px;
-            font-weight: bold;
-            color: #333;
-        }
+      /* CSS για την εμφάνιση του κουίζ */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        margin: 40px;
+      }
+      .quiz-container {
+        max-width: 600px;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .question {
+        font-weight: bold;
+        margin-top: 15px;
+        margin-bottom: 5px;
+      }
+      .options label {
+        display: block;
+        margin: 5px 0;
+        cursor: pointer;
+      }
+      button {
+        margin-top: 20px;
+        padding: 10px 15px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      button:hover {
+        background-color: #218838;
+      }
+      #result {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+      }
     </style>
-</head>
-<body>
-
-<div class="quiz-container">
-    <h2>Quiz Time: lern about your sosial addiction</h2>
-    <form id="quizForm">
-        
+  </head>
+  <body>
+    <div class="quiz-container">
+      <h2>Quiz Time: lern about your sosial addiction</h2>
+      <form id="quizForm">
         <!-- Ερώτηση 1 -->
-        <div class="question">1.Πόσο χρόνο αφιερώνεις στην οθόνη σου κάθε μέρα;</div>
+        <div class="question">
+          1.Πόσο χρόνο αφιερώνεις στην οθόνη σου κάθε μέρα;
+        </div>
         <div class="options">
-            <label><input type="radio" name="q1" value="wrong"> Λιγότερο από μισή ωρα</label>
-            <label><input type="radio" name="q1" value="correct"> 1-2 ώρες</label>
-            <label><input type="radio" name="q1" value="wrong"> 2-5 ώρες </label>
-            <label><input type="radio" name="q1" value="wrong"> Περισσότερο από 5 ώρες</label>
+          <label
+            ><input type="radio" name="q1" value="wrong" /> Λιγότερο από μισή
+            ωρα</label
+          >
+          <label
+            ><input type="radio" name="q1" value="correct" /> 1-2 ώρες</label
+          >
+          <label
+            ><input type="radio" name="q1" value="wrong" /> 2-5 ώρες
+          </label>
+          <label
+            ><input type="radio" name="q1" value="wrong" /> Περισσότερο από 5
+            ώρες</label
+          >
         </div>
 
         <!-- Ερώτηση 2 -->
-        <div class="question">2.Θα έλεγες οτι αισθάνεσαι καλύτερα ή χειρότερα όταν αποσυνδέεσαι;</div>
+        <div class="question">
+          2.Θα έλεγες οτι αισθάνεσαι καλύτερα ή χειρότερα όταν αποσυνδέεσαι;
+        </div>
         <div class="options">
-            <label><input type="radio" name="q2" value="wrong"> σίγουρα καλύτερα</label>
-            <label><input type="radio" name="q2" value="wrong"> δεν παρατηρώ κάποια διαφορά</label>
-            <label><input type="radio" name="q2" value="correct"> χειρότερα</label>
+          <label
+            ><input type="radio" name="q2" value="wrong" /> σίγουρα
+            καλύτερα</label
+          >
+          <label
+            ><input type="radio" name="q2" value="wrong" /> δεν παρατηρώ κάποια
+            διαφορά</label
+          >
+          <label
+            ><input type="radio" name="q2" value="correct" /> χειρότερα</label
+          >
         </div>
 
         <!-- Ερώτηση 3 -->
-        <div class="question">3.Θα ήθελες να μειώσεις το χρόνο που αφιερώνεις στην οθόνη σου;</div>
-        <div class="options">
-            <label><input type="radio" name="q3" value="correct"> Ναι</label>
-            <label><input type="radio" name="q3" value="wrong"> Όχι</label>
-            <label><input type="radio" name="q3" value="wrong"> Δεν μπορώ να αποφασίσω</label>
+        <div class="question">
+          3.Θα ήθελες να μειώσεις το χρόνο που αφιερώνεις στην οθόνη σου;
         </div>
-         <div class="question">4.Πιστεύεις ότι η διάθεση σου επηρεάζεται απο την χρήση των sosial media;</div>
         <div class="options">
-            <label><input type="radio" name="q2" value="wrong"> Σε πολύ μεγάλο ποσοστό</label>
-            <label><input type="radio" name="q2" value="wrong">Λιγο ναι</label>
-            <label><input type="radio" name="q2" value="correct"> Καθόλου</label>
+          <label><input type="radio" name="q3" value="correct" /> Ναι</label>
+          <label><input type="radio" name="q3" value="wrong" /> Όχι</label>
+          <label
+            ><input type="radio" name="q3" value="wrong" /> Δεν μπορώ να
+            αποφασίσω</label
+          >
+        </div>
+        <div class="question">
+          4.Πιστεύεις ότι η διάθεση σου επηρεάζεται απο την χρήση των sosial
+          media;
+        </div>
+        <div class="options">
+          <label
+            ><input type="radio" name="q4" value="wrong" /> Σε πολύ μεγάλο
+            ποσοστό</label
+          >
+          <label><input type="radio" name="q4" value="wrong" />Λιγο ναι</label>
+          <label
+            ><input type="radio" name="q4" value="correct" /> Καθόλου</label
+          >
         </div>
 
         <button type="button" onclick="checkAnswers()">Υποβολή</button>
-    </form>
+      </form>
 
-    <div id="result"></div>
-</div>
+      <div id="result"></div>
+    </div>
 
-<script>
-    // JavaScript για τον έλεγχο των απαντήσεων
-    function checkAnswers() {
+    <script>
+      // JavaScript για τον έλεγχο των απαντήσεων
+      function checkAnswers() {
         let score = 0;
-        const totalQuestions = 3;
-        const form = document.getElementById('quizForm');
-        
+        const totalQuestions = 4;
+        const form = document.getElementById("quizForm");
+
         // Έλεγχος για κάθε ερώτηση
         for (let i = 1; i <= totalQuestions; i++) {
-            const answer = form.elements['q' + i].value;
-            if (answer === 'correct') {
-                score++;
-            }
+          const answer = form.elements["q" + i].value;
+          if (answer === "correct") {
+            score++;
+          }
         }
-        
-        // Εμφάνιση του αποτελέσματος
-        const resultDiv = document.getElementById('result');
-        resultDiv.innerHTML = `Σκορ: ${score} / ${totalQuestions}`;
-    }
-</script>
 
-</body>
+        // Εμφάνιση του αποτελέσματος
+        const resultDiv = document.getElementById("result");
+        resultDiv.innerHTML = `Σκορ: ${score} / ${totalQuestions}`;
+      }
+    </script>
+  </body>
 </html>

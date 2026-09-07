@@ -48,3 +48,43 @@ img {
   width: 450px;
   max-width: 50%;
 }
+/* CSS για την εμφάνιση του κουίζ */
+.quiz-container {
+  max-width: 600px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 40px;
+}
+.question {
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.options label {
+  display: block;
+  margin: 5px 0;
+  cursor: pointer;
+}
+button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+button:hover {
+  background-color: #218838;
+}
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
