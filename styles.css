@@ -17,13 +17,17 @@ body {
   background-color: #c7fdc9;
   padding: 30px;
 }
+
+.home-box {
+  max-width: 50%;
+}
+
 .box {
   background-color: #47906dbd;
   padding: 30px;
   margin: 50px;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 40%;
   font-size: 20px;
 }
 img {
@@ -33,4 +37,5 @@ img {
   border-radius: 15px;
   margin: 50px auto;
   width: 450px;
+  max-width: 50%;
 }
