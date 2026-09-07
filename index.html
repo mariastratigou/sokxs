@@ -106,20 +106,18 @@
           1.Πόσο χρόνο αφιερώνεις στην οθόνη σου κάθε μέρα;
         </div>
         <div class="options">
-          <label
-            ><input type="radio" name="q1" value="wrong" /> Λιγότερο από μισή
-            ωρα</label
+          <label>
+            <input type="radio" name="q1" value="low_addiction" /> Λιγότερο από
+            1 ωρα</label
           >
           <label
-            ><input type="radio" name="q1" value="correct" /> 1-2 ώρες</label
-          >
-          <label
-            ><input type="radio" name="q1" value="wrong" /> 2-5 ώρες
-          </label>
-          <label
-            ><input type="radio" name="q1" value="wrong" /> Περισσότερο από 5
+            ><input type="radio" name="q1" value="medium_addiction" /> 2-4
             ώρες</label
           >
+          <label
+            ><input type="radio" name="q1" value="high_addiction" /> πανω από 4
+            ώρες
+          </label>
         </div>
 
         <!-- Ερώτηση 2 -->
@@ -128,15 +126,16 @@
         </div>
         <div class="options">
           <label
-            ><input type="radio" name="q2" value="wrong" /> σίγουρα
+            ><input type="radio" name="q2" value="low_addiction" /> σίγουρα
             καλύτερα</label
           >
           <label
-            ><input type="radio" name="q2" value="wrong" /> δεν παρατηρώ κάποια
-            διαφορά</label
+            ><input type="radio" name="q2" value="medium_addiction" /> δεν
+            παρατηρώ κάποια διαφορά</label
           >
           <label
-            ><input type="radio" name="q2" value="correct" /> χειρότερα</label
+            ><input type="radio" name="q2" value="high_addiction" />
+            χειρότερα</label
           >
         </div>
 
@@ -145,11 +144,15 @@
           3.Θα ήθελες να μειώσεις το χρόνο που αφιερώνεις στην οθόνη σου;
         </div>
         <div class="options">
-          <label><input type="radio" name="q3" value="correct" /> Ναι</label>
-          <label><input type="radio" name="q3" value="wrong" /> Όχι</label>
           <label
-            ><input type="radio" name="q3" value="wrong" /> Δεν μπορώ να
-            αποφασίσω</label
+            ><input type="radio" name="q3" value="low_addiction" /> Ναι</label
+          >
+          <label
+            ><input type="radio" name="q3" value="medium_addiction" /> Δεν μπορώ
+            να αποφασίσω</label
+          >
+          <label
+            ><input type="radio" name="q3" value="high_addiction" /> Όχι</label
           >
         </div>
         <div class="question">
@@ -158,12 +161,16 @@
         </div>
         <div class="options">
           <label
-            ><input type="radio" name="q4" value="wrong" /> Σε πολύ μεγάλο
-            ποσοστό</label
+            ><input type="radio" name="q4" value="low_addiction" />
+            Καθόλου</label
           >
-          <label><input type="radio" name="q4" value="wrong" />Λιγο ναι</label>
           <label
-            ><input type="radio" name="q4" value="correct" /> Καθόλου</label
+            ><input type="radio" name="q4" value="medium_addiction" />Λιγο
+            ναι</label
+          >
+          <label
+            ><input type="radio" name="q4" value="high_addiction" /> Σε πολύ
+            μεγάλο ποσοστό</label
           >
         </div>
 
@@ -177,20 +184,51 @@
       // JavaScript για τον έλεγχο των απαντήσεων
       function checkAnswers() {
         let score = 0;
+
+        let total_low_addiction = 0;
+        let total_medium_addiction = 0;
+        let total_high_addiction = 0;
+
         const totalQuestions = 4;
         const form = document.getElementById("quizForm");
 
         // Έλεγχος για κάθε ερώτηση
         for (let i = 1; i <= totalQuestions; i++) {
           const answer = form.elements["q" + i].value;
-          if (answer === "correct") {
-            score++;
+          if (answer === "low_addiction") {
+            total_low_addiction++;
+          } else if (answer === "medium_addiction") {
+            total_medium_addiction++;
+          } else if (answer === "high_addiction") {
+            total_high_addiction++;
           }
+        }
+
+        if (
+          total_low_addiction > total_medium_addiction &&
+          total_low_addiction > total_high_addiction
+        ) {
+          score = "Χαμηλή εξάρτηση";
+        } else if (
+          total_medium_addiction > total_low_addiction &&
+          total_medium_addiction > total_high_addiction
+        ) {
+          score = "Μεσαία εξάρτηση";
+        } else if (
+          total_high_addiction > total_low_addiction &&
+          total_high_addiction > total_medium_addiction
+        ) {
+          score = "Υψηλή εξάρτηση";
+        } else {
+          score = "Ισορροπημένο αποτέλεσμα";
         }
 
         // Εμφάνιση του αποτελέσματος
         const resultDiv = document.getElementById("result");
-        resultDiv.innerHTML = `Σκορ: ${score} / ${totalQuestions}`;
+
+        resultDiv.innerHTML = `
+          <p>Τελικό αποτέλεσμα: ${score}</p>
+        `;
       }
     </script>
   </body>
