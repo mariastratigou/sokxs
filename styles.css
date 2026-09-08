@@ -18,45 +18,36 @@ body {
   padding: 30px;
 }
 
-.home-box {
-  max-width: 50%;
+/* .home-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 10%;
 }
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+} */
 
 .box {
   background-color: #47906dbd;
   padding: 30px;
-  margin: 50px;
+  margin-bottom: 20px;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-size: 20px;
 }
-.box2 {
-  background-color: #47906dbd;
-  padding: 30px;
-  margin: 50px;
+
+#img-1 {
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 40%;
-  font-size: 20px;
 }
-img {
-  position: absolute;
-  right: 100px;
-  top: 100px;
+
+#img-2 {
   border-radius: 15px;
-  margin: 50px auto;
-  width: 450px;
-  max-width: 50%;
+  min-width: 50px;
+  width: 100%;
 }
-.img-2 {
-  position: absolute;
-  right: 150px;
-  top: 800px;
-  border-radius: 15px;
-  margin: 80px auto;
-  width: 550px;
-  max-width: 50%;
-}
+
 /* CSS για την εμφάνιση του κουίζ */
 .quiz-container {
   max-width: 600px;
